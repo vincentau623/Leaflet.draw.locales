@@ -2,67 +2,67 @@ import { DrawHandlers, DrawToolbar, EditHandlers, EditToolbar } from "../index";
 
 const drawToolbar: DrawToolbar = {
   actions: {
-    title: "取消绘制",
+    title: "取消繪製",
     text: "取消",
   },
   finish: {
-    title: "结束绘制",
-    text: "结束",
+    title: "結束繪製",
+    text: "結束",
   },
   undo: {
-    title: "删除最后一个绘制点",
-    text: "删除最后一个点",
+    title: "刪除最後一個繪製點",
+    text: "刪除最後一個點",
   },
   buttons: {
-    polyline: "绘制折线",
-    polygon: "绘制多边形",
-    rectangle: "绘制矩形",
-    circle: "绘制圆形",
-    marker: "绘制标志物",
-    circlemarker: "绘制圆形标志物",
+    polyline: "繪製折線",
+    polygon: "繪製多邊形",
+    rectangle: "繪製矩形",
+    circle: "繪製圓形",
+    marker: "繪製標誌物",
+    circlemarker: "繪製圓形標誌物",
   },
 };
 
 const drawHandlers: DrawHandlers = {
   circle: {
     tooltip: {
-      start: "单击并拖拽绘制圆形",
+      start: "單擊並拖拽繪製圓形",
     },
-    radius: "半径",
+    radius: "半徑",
   },
   circlemarker: {
     tooltip: {
-      start: "单击地图放置圆形标志物",
+      start: "單擊地圖放置圓形標誌物",
     },
   },
   marker: {
     tooltip: {
-      start: "单击地图放置标志物",
+      start: "單擊地圖放置標誌物",
     },
   },
   polygon: {
     tooltip: {
-      start: "单击地图绘制图形",
-      cont: "继续单击绘制图形",
-      end: "单击起始点结束绘制",
+      start: "單擊地圖繪製圖形",
+      cont: "繼續單擊繪製圖形",
+      end: "單擊起始點結束繪製",
     },
   },
   polyline: {
-    error: "<strong>错误:</strong> 图形边缘不能交叉!",
+    error: "<strong>錯誤:</strong> 圖形邊緣不能交叉!",
     tooltip: {
-      start: "单击地图绘制折线",
-      cont: "继续单击绘制下一段折线",
-      end: "单击最后一个点结束绘制",
+      start: "單擊地圖繪製折線",
+      cont: "繼續單擊繪製下一段折線",
+      end: "單擊最後一個點結束繪製",
     },
   },
   rectangle: {
     tooltip: {
-      start: "单击并拖拽绘制矩形",
+      start: "單擊並拖拽繪製矩形",
     },
   },
   simpleshape: {
     tooltip: {
-      end: "松开鼠标结束绘制",
+      end: "鬆開鼠標結束繪製",
     },
   },
 };
@@ -70,36 +70,36 @@ const drawHandlers: DrawHandlers = {
 const editToolbar: EditToolbar = {
   actions: {
     save: {
-      title: "保存变更",
+      title: "保存變更",
       text: "保存",
     },
     cancel: {
-      title: "取消编辑，放弃所有变更",
+      title: "取消編輯，放棄所有變更",
       text: "取消",
     },
     clearAll: {
-      title: "清除所有图形",
+      title: "清除所有圖形",
       text: "清除所有",
     },
   },
   buttons: {
-    edit: "编辑图形",
-    editDisabled: "无图形可编辑",
-    remove: "删除图形",
-    removeDisabled: "无图形可删除",
+    edit: "編輯圖形",
+    editDisabled: "無圖形可編輯",
+    remove: "刪除圖形",
+    removeDisabled: "無圖形可刪除",
   },
 };
 
 const editHandlers: EditHandlers = {
   edit: {
     tooltip: {
-      text: "拖拽线段或标志点以编辑图形",
-      subtext: "点击<strong>取消</strong>按钮撤销变更",
+      text: "拖拽線段或標誌點以編輯圖形",
+      subtext: "點擊<strong>取消</strong>按鈕撤銷變更",
     },
   },
   remove: {
     tooltip: {
-      text: "单击图形以移除",
+      text: "單擊圖形以移除",
     },
   },
 };
